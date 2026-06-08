@@ -1,3 +1,4 @@
+package src.models;
 public class PremiumCustomer extends Customer {
 
     public PremiumCustomer(String customerId, String customerName, double balance) {
