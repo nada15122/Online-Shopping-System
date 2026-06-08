@@ -3,36 +3,35 @@ import java.util.Scanner;
 
 public class Main {
     private static ArrayList<Product> productList = new ArrayList<>();
-    private static Customer currentCustomer = null; // يبدأ بـ null حتى يسجل العميل بنفسه
+    private static Customer currentCustomer = null;
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // إضافة منتجات افتراضية عند بدء التشغيل
-     /*   productList.add(new Product("101", "Laptop", 1200.0, 5));
-        productList.add(new Product("102", "Smartphone", 700.0, 10));
-        productList.add(new Product("103", "Headphones", 150.0, 15));*/
 
         int choice;
         do {
-            System.out.println("\n========== Welcome Online Shopping System ==========");
+            System.out.println("==================================================");
+            System.out.println("       WELCOME TO ONLINE SHOPPING SYSTEM         ");
+            System.out.println("          Developed by: Nada Nabil               ");
+            System.out.println("==================================================");
             System.out.println("1. Add Product");
             System.out.println("2. Display Products");
             System.out.println("3. Search Product");
             System.out.println("4. Add Product To Cart");
             System.out.println("5. Remove Product From Cart");
-            System.out.println("6. View Cart");
+            System.out.println("6. View Shopping Cart");
             System.out.println("7. Purchase Products");
             System.out.println("8. Add Balance");
             System.out.println("9. View Balance");
             System.out.println("10. Generate Invoice");
-            System.out.println("11. View Order History");
+            System.out.println("11. Display Order History");
             System.out.println("12. Customer Information");
             System.out.println("13. Apply Discount");
-            System.out.println("14. Exit");
+            System.out.println("14. Exit System");
             System.out.print("Enter Your Choice: ");
 
             choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -83,7 +82,6 @@ public class Main {
         } while (choice != 14);
     }
 
-    // دالة ذكية للتحقق: إذا لم يكن هناك عميل مسجل، تطلب التسجيل فوراً
     private static boolean checkCustomer() {
         if (currentCustomer == null) {
             System.out.println("\n[!] You must initialize a customer profile first to perform this action.");
@@ -103,7 +101,7 @@ public class Main {
         double balance = scanner.nextDouble();
         System.out.print("Select Type (1 for Regular, 2 for Premium): ");
         int type = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         if (type == 2) {
             currentCustomer = new PremiumCustomer(id, name, balance);
