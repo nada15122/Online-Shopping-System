@@ -47,7 +47,7 @@ public class Product {
 
     // Methods
     public void displayProduct() {
-        System.out.println("ID: " + productId + " | Name: " + productName + " | Price: $" + price + " | Stock: " + quantity);
+        System.out.println("ID: " + productId + " | Name: " + productName + " | Price: $" + price + " | Quantity: " + quantity);
     }
 
     public void updateQuantity(int amount) {
