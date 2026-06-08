@@ -1,3 +1,5 @@
+package src;
+import src.models.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
