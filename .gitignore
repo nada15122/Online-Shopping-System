@@ -1,0 +1,40 @@
+# Compiled class files (ملفات الكود المترجمة التي ينتجها البرنامج تلقائياً)
+*.class
+*.log
+*.ctxt
+
+# Mobile Tools Package (Sun)
+.mtj.tmp/
+
+# Package Files (ملفات الأرشيف)
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IntelliJ IDEA (إذا كنتِ تستخدمين IntelliJ)
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+gen/
+
+# Eclipse (إذا كنتِ تستخدمين Eclipse)
+.metadata/
+bin/
+tmp/
+.tmp/
+.classpath
+.project
+.settings/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
