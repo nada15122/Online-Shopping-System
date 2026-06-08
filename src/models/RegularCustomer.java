@@ -1,3 +1,4 @@
+package src.models;
 public class RegularCustomer extends Customer {
 
     public RegularCustomer(String customerId, String customerName, double balance) {
